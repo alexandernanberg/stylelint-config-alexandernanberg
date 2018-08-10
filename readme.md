@@ -1,5 +1,6 @@
-# stylelint-config-strateg
+# stylelint-config-alexandernanberg
 
-[![npm version](https://badge.fury.io/js/stylelint-config-strateg.svg)](https://badge.fury.io/js/stylelint-config-strateg)
+> Stylelint rules according to my personal preference 
 
-> Extends [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
+## License
+MIT
