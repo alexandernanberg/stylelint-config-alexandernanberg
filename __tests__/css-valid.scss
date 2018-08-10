@@ -1,0 +1,53 @@
+$breakpoints: (
+  mobile: 0,
+  tablet: 620px,
+  desktop: 980px,
+);
+
+@function getBreakpoint($value, $dir) {
+  $breakpoint: if($dir == 'down', $value - 1, $value);
+
+  @return $breakpoint;
+}
+
+@mixin breakpoint($value) {
+  $bp: nth($value, 1);
+  $dir: if(length($value) > 1, nth($value, 2), up);
+  $media-query: if($dir == 'down', max-width, min-width);
+
+  @if map-has-key($breakpoints, $bp) {
+    @media only screen and (#{$media-query}: getBreakpoint(map-get($breakpoints, $bp), $dir)) {
+      @content;
+    }
+  } @else {
+    @error 'Invalid argument "#{$value}". Argument must match a key in $breakpoints.';
+  }
+}
+
+@mixin box($spacing: 10rem) {
+  $font-size: if($baz, 3rem, 5rem);
+  padding: $size;
+  font-size: $font-size;
+  box-shadow: 0 2px 10px rgba(black, 0.2);
+}
+
+.foo {
+  font-size: 1.5rem;
+
+  @if baz {
+    padding: 2rem;
+  } @else {
+    padding: 1rem;
+  }
+}
+
+.bar {
+  @include box(4rem);
+  @extend .foo;
+  padding: 16px;
+  background-color: royalblue;
+
+  @include breakpoint(tablet) {
+    background-color: rebeccapurple;
+  }
+}

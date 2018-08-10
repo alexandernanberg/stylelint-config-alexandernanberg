@@ -1,0 +1,19 @@
+$baz:false;
+
+.foo{
+
+  padding: 4px;
+  @if $baz {
+    font-size: 1.4rem;
+  }
+  @else {
+    font-size: 2rem;
+  }
+}
+
+.bar
+{
+  font-size: 1rem;
+
+  color: rosybrown;
+}
