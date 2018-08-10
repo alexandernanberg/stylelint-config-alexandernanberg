@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "styled.js"
+  ],
   "scripts": {
     "list": "eslint *.js",
     "test": "jest",
