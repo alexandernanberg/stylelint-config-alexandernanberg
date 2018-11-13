@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "files": [
+    "css-in-js.js",
     "index.js",
     "styled.js",
-    "css-in-js.js"
+    "stylelint.config.js"
   ],
   "scripts": {
     "list": "eslint *.js",
