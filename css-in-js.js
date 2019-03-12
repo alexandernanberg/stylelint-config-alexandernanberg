@@ -5,4 +5,8 @@ module.exports = {
     'stylelint-config-prettier',
   ],
   processors: ['stylelint-processor-styled-components'],
+  rules: {
+    'selector-type-no-unknown': null,
+    'declaration-empty-line-before': null,
+  },
 }
