@@ -37,9 +37,9 @@
     "jest-preset-stylelint": "^1.3.0",
     "prettier": "^1.16.4",
     "semantic-release": "^15.13.12",
-    "stylelint": "^9.10.1"
+    "stylelint": "^10.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^9.10.1"
+    "stylelint": "^10.0.0"
   }
 }
