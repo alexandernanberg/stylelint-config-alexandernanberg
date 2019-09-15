@@ -40,6 +40,6 @@
     "stylelint": "^11.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^11.0.0"
+    "stylelint": "^10.0.0 || ^11.0.0"
   }
 }
