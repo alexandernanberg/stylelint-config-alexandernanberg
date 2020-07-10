@@ -1,6 +1,6 @@
 const fs = require('fs')
 const stylelint = require('stylelint')
-const config = require('../')
+const config = require('..')
 
 const validCss = fs.readFileSync('./__tests__/css-valid.scss', 'utf-8')
 const invalidCss = fs.readFileSync('./__tests__/css-invalid.scss', 'utf-8')
@@ -16,8 +16,9 @@ describe('valid css', () => {
   })
 
   it('did not error', () =>
-    result.then(data => {
+    result.then((data) => {
       if (data.errored) {
+        // eslint-disable-next-line no-console
         console.log(data.results[0].warnings)
       }
 
@@ -35,5 +36,6 @@ describe('invalid css', () => {
     })
   })
 
-  it('did error', () => result.then(data => expect(data.errored).toBeTruthy()))
+  it('did error', () =>
+    result.then((data) => expect(data.errored).toBeTruthy()))
 })
