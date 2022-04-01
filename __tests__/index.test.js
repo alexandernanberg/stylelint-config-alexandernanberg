@@ -10,7 +10,7 @@ describe('valid css', () => {
   beforeEach(() => {
     result = stylelint.lint({
       code: validCss,
-      syntax: 'scss',
+      customSyntax: 'postcss-scss',
       config,
     })
   })
