@@ -25,7 +25,7 @@
   "dependencies": {
     "stylelint-config-prettier": "^9.0.0",
     "stylelint-config-recommended-scss": "^7.0.0",
-    "stylelint-config-standard": "^26.0.0",
+    "stylelint-config-standard": "^27.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-order": "5.0.0",
     "stylelint-processor-styled-components": "^1.7.0"
@@ -37,7 +37,7 @@
     "jest-preset-stylelint": "^5.0.0",
     "prettier": "^2.0.0",
     "semantic-release": "^19.0.0",
-    "stylelint": "^14.9.0"
+    "stylelint": "^14.10.0"
   },
   "peerDependencies": {
     "stylelint": ">=14.9.0"
