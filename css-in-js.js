@@ -1,9 +1,5 @@
 module.exports = {
-  extends: [
-    require.resolve('./index'),
-    'stylelint-config-styled-components',
-    'stylelint-config-prettier',
-  ],
+  extends: [require.resolve('./index'), 'stylelint-config-styled-components'],
   processors: ['stylelint-processor-styled-components'],
   rules: {
     'selector-type-no-unknown': null,
