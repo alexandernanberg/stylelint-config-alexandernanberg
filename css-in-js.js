@@ -1,8 +1,8 @@
+/**
+ * @type {import('stylelint').Config}
+ */
 module.exports = {
-  extends: [require.resolve('./index'), 'stylelint-config-styled-components'],
-  processors: ['stylelint-processor-styled-components'],
-  rules: {
-    'selector-type-no-unknown': null,
-    'declaration-empty-line-before': null,
-  },
+  extends: [require.resolve('./index')],
+  customSyntax: 'postcss-styled-syntax',
+  rules: {},
 }

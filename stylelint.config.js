@@ -1,3 +1,6 @@
+/**
+ * @type {import('stylelint').Config}
+ */
 module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-config-recommended-scss'],
   plugins: ['stylelint-order'],
