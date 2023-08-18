@@ -1,18 +1,15 @@
-$baz:false;
+$baz: false;
 
-.foo{
-
+.foo {
   padding: 4px;
   @if $baz {
     font-size: 1.4rem;
-  }
-  @else {
+  } @else {
     font-size: 2rem;
   }
 }
 
-.bar
-{
+.bar {
   font-size: 1rem;
 
   color: rosybrown;

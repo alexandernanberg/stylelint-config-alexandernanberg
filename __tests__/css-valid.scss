@@ -12,7 +12,7 @@ $breakpoints: (
 
 @mixin breakpoint($value) {
   $bp: list.nth($value, 1);
-  $dir: if(list.length($value) > 1,list.nth($value, 2), up);
+  $dir: if(list.length($value) > 1, list.nth($value, 2), up);
   $media-query: if($dir == 'down', max-width, min-width);
 
   @if map-has-key($breakpoints, $bp) {
