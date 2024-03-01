@@ -36,7 +36,7 @@
     "jest-preset-stylelint": "^6.2.0",
     "postcss": "^8.4.28",
     "prettier": "^3.0.2",
-    "semantic-release": "^22.0.0",
+    "semantic-release": "^23.0.0",
     "stylelint": "^15.10.2",
     "typescript": "^5.1.6"
   },
