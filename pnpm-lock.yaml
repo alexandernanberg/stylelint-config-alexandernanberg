@@ -12,8 +12,8 @@ importers:
         specifier: ^0.4.0
         version: 0.4.0(postcss@8.4.28)(typescript@5.1.6)
       stylelint-config-recommended-scss:
-        specifier: ^12.0.0
-        version: 12.0.0(postcss@8.4.28)(stylelint@15.10.2)
+        specifier: ^14.0.0
+        version: 14.0.0(postcss@8.4.28)(stylelint@15.10.2)
       stylelint-config-standard:
         specifier: ^34.0.0
         version: 34.0.0(stylelint@15.10.2)
@@ -2026,6 +2026,9 @@ packages:
   known-css-properties@0.27.0:
     resolution: {integrity: sha512-uMCj6+hZYDoffuvAJjFAPz56E9uoowFHmTkqRtRq5WyC5Q6Cu/fTZKNQpX/RbzChBYLLl3lo8CjFZBAZXq9qFg==}
 
+  known-css-properties@0.30.0:
+    resolution: {integrity: sha512-VSWXYUnsPu9+WYKkfmJyLKtIvaRJi1kXUqVmBACORXZQxT5oZDsoZ2vQP+bQFDnWtpI/4eq3MLoRMjI2fnLzTQ==}
+
   language-subtag-registry@0.3.22:
     resolution: {integrity: sha512-tN0MCzyWnoz/4nHS6uxdlFWoUZT7ABptwKPQ52Ea7URk6vll88bWBVhodtnlfEuCcKWNGoc+uGbw1cwa9IKh/w==}
 
@@ -2520,14 +2523,18 @@ packages:
     peerDependencies:
       postcss: ^8.3.3
 
-  postcss-scss@4.0.7:
-    resolution: {integrity: sha512-xPv2GseoyXPa58Nro7M73ZntttusuCmZdeOojUFR5PZDz2BR62vfYx1w9TyOnp1+nYFowgOMipsCBhxzVkAEPw==}
+  postcss-scss@4.0.9:
+    resolution: {integrity: sha512-AjKOeiwAitL/MXxQW2DliT28EKukvvbEWx3LBmJIRN8KfBGZbRTxNYW0kSqi1COiTZ57nZ9NW06S6ux//N1c9A==}
     engines: {node: '>=12.0'}
     peerDependencies:
-      postcss: ^8.4.19
+      postcss: ^8.4.29
 
   postcss-selector-parser@6.0.13:
     resolution: {integrity: sha512-EaV1Gl4mUEV4ddhDnv/xtj7sxwrwxdetHdWUGnT4VJQf+4d05v6lHYZr8N573k5Z0BViss7BDhfWtKS3+sfAqQ==}
+    engines: {node: '>=4'}
+
+  postcss-selector-parser@6.1.0:
+    resolution: {integrity: sha512-UMz42UD0UY0EApS0ZL9o1XnLhSTtvvvLe5Dc2H2O56fvRZi+KulDyf5ctDhhtYJBGKStV2FL1fy6253cmLgqVQ==}
     engines: {node: '>=4'}
 
   postcss-sorting@8.0.2:
@@ -2897,25 +2904,27 @@ packages:
   style-search@0.1.0:
     resolution: {integrity: sha512-Dj1Okke1C3uKKwQcetra4jSuk0DqbzbYtXipzFlFMZtowbF1x7BKJwB9AayVMyFARvU8EDrZdcax4At/452cAg==}
 
-  stylelint-config-recommended-scss@12.0.0:
-    resolution: {integrity: sha512-5Bb2mlGy6WLa30oNeKpZvavv2lowJUsUJO25+OA68GFTemlwd1zbFsL7q0bReKipOSU3sG47hKneZ6Nd+ctrFA==}
+  stylelint-config-recommended-scss@14.0.0:
+    resolution: {integrity: sha512-HDvpoOAQ1RpF+sPbDOT2Q2/YrBDEJDnUymmVmZ7mMCeNiFSdhRdyGEimBkz06wsN+HaFwUh249gDR+I9JR7Onw==}
+    engines: {node: '>=18.12.0'}
     peerDependencies:
       postcss: ^8.3.3
-      stylelint: ^15.5.0
+      stylelint: ^16.0.2
     peerDependenciesMeta:
       postcss:
         optional: true
-
-  stylelint-config-recommended@12.0.0:
-    resolution: {integrity: sha512-x6x8QNARrGO2sG6iURkzqL+Dp+4bJorPMMRNPScdvaUK8PsynriOcMW7AFDKqkWAS5wbue/u8fUT/4ynzcmqdQ==}
-    peerDependencies:
-      stylelint: ^15.5.0
 
   stylelint-config-recommended@13.0.0:
     resolution: {integrity: sha512-EH+yRj6h3GAe/fRiyaoO2F9l9Tgg50AOFhaszyfov9v6ayXJ1IkSHwTxd7lB48FmOeSGDPLjatjO11fJpmarkQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
     peerDependencies:
       stylelint: ^15.10.0
+
+  stylelint-config-recommended@14.0.0:
+    resolution: {integrity: sha512-jSkx290CglS8StmrLp2TxAppIajzIBZKYm3IxT89Kg6fGlxbPiTiyH9PS5YUuVAFwaJLl1ikiXX0QWjI0jmgZQ==}
+    engines: {node: '>=18.12.0'}
+    peerDependencies:
+      stylelint: ^16.0.0
 
   stylelint-config-standard@34.0.0:
     resolution: {integrity: sha512-u0VSZnVyW9VSryBG2LSO+OQTjN7zF9XJaAJRX/4EwkmU0R2jYwmBSN10acqZisDitS0CLiEiGjX7+Hrq8TAhfQ==}
@@ -2928,10 +2937,11 @@ packages:
     peerDependencies:
       stylelint: ^14.0.0 || ^15.0.0
 
-  stylelint-scss@5.1.0:
-    resolution: {integrity: sha512-E+KlQFXv1Euha43qw3q+wKBSli557wxbbo6/39DWhRNXlUa9Cz+FYrcgz+PT6ag0l6UisCYjAGCNhoSl4FcwlA==}
+  stylelint-scss@6.3.0:
+    resolution: {integrity: sha512-8OSpiuf1xC7f8kllJsBOFAOYp/mR/C1FXMVeOFjtJPw+AFvEmC93FaklHt7MlOqU4poxuQ1TkYMyfI0V+1SxjA==}
+    engines: {node: '>=18.12.0'}
     peerDependencies:
-      stylelint: ^14.5.1 || ^15.0.0
+      stylelint: ^16.0.2
 
   stylelint@15.10.2:
     resolution: {integrity: sha512-UxqSb3hB74g4DTO45QhUHkJMjKKU//lNUAOWyvPBVPZbCknJ5HjOWWZo+UDuhHa9FLeVdHBZXxu43eXkjyIPWg==}
@@ -5774,6 +5784,8 @@ snapshots:
 
   known-css-properties@0.27.0: {}
 
+  known-css-properties@0.30.0: {}
+
   language-subtag-registry@0.3.22: {}
 
   language-tags@1.0.5:
@@ -6168,11 +6180,16 @@ snapshots:
     dependencies:
       postcss: 8.4.28
 
-  postcss-scss@4.0.7(postcss@8.4.28):
+  postcss-scss@4.0.9(postcss@8.4.28):
     dependencies:
       postcss: 8.4.28
 
   postcss-selector-parser@6.0.13:
+    dependencies:
+      cssesc: 3.0.0
+      util-deprecate: 1.0.2
+
+  postcss-selector-parser@6.1.0:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
@@ -6593,20 +6610,20 @@ snapshots:
 
   style-search@0.1.0: {}
 
-  stylelint-config-recommended-scss@12.0.0(postcss@8.4.28)(stylelint@15.10.2):
+  stylelint-config-recommended-scss@14.0.0(postcss@8.4.28)(stylelint@15.10.2):
     dependencies:
-      postcss-scss: 4.0.7(postcss@8.4.28)
+      postcss-scss: 4.0.9(postcss@8.4.28)
       stylelint: 15.10.2
-      stylelint-config-recommended: 12.0.0(stylelint@15.10.2)
-      stylelint-scss: 5.1.0(stylelint@15.10.2)
+      stylelint-config-recommended: 14.0.0(stylelint@15.10.2)
+      stylelint-scss: 6.3.0(stylelint@15.10.2)
     optionalDependencies:
       postcss: 8.4.28
 
-  stylelint-config-recommended@12.0.0(stylelint@15.10.2):
+  stylelint-config-recommended@13.0.0(stylelint@15.10.2):
     dependencies:
       stylelint: 15.10.2
 
-  stylelint-config-recommended@13.0.0(stylelint@15.10.2):
+  stylelint-config-recommended@14.0.0(stylelint@15.10.2):
     dependencies:
       stylelint: 15.10.2
 
@@ -6621,11 +6638,12 @@ snapshots:
       postcss-sorting: 8.0.2(postcss@8.4.28)
       stylelint: 15.10.2
 
-  stylelint-scss@5.1.0(stylelint@15.10.2):
+  stylelint-scss@6.3.0(stylelint@15.10.2):
     dependencies:
+      known-css-properties: 0.30.0
       postcss-media-query-parser: 0.2.3
       postcss-resolve-nested-selector: 0.1.1
-      postcss-selector-parser: 6.0.13
+      postcss-selector-parser: 6.1.0
       postcss-value-parser: 4.2.0
       stylelint: 15.10.2
 
