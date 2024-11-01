@@ -30,7 +30,7 @@
     "stylelint-order": "^6.0.3"
   },
   "devDependencies": {
-    "eslint": "^8.47.0",
+    "eslint": "^9.0.0",
     "eslint-config-alexandernanberg": "^3.4.1",
     "jest": "^29.6.2",
     "jest-preset-stylelint": "^6.2.0",
