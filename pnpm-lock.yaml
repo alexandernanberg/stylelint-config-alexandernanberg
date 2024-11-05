@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       postcss-styled-syntax:
-        specifier: ^0.4.0
-        version: 0.4.0(postcss@8.4.31)(typescript@5.1.6)
+        specifier: ^0.7.0
+        version: 0.7.0(postcss@8.4.31)
       stylelint-config-recommended-scss:
         specifier: ^12.0.0
         version: 12.0.0(postcss@8.4.31)(stylelint@15.10.2)
@@ -1285,9 +1285,6 @@ packages:
     resolution: {integrity: sha512-MMdARuVEQziNTeJD8DgMqmhwR11BRQ/cBP+pLtYdSTnf3MIO8fFeiINEbX36ZdNlfU/7A9f3gUw49B3oQsvwBA==}
     engines: {node: '>=4.0'}
 
-  estree-walker@2.0.2:
-    resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
-
   esutils@2.0.3:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
     engines: {node: '>=0.10.0'}
@@ -2541,8 +2538,9 @@ packages:
     peerDependencies:
       postcss: ^8.4.20
 
-  postcss-styled-syntax@0.4.0:
-    resolution: {integrity: sha512-LvG++K8LtIyX1Q1mNuZVQYmBo+SCwn90cEkMigo4/I0QwXrEiYt8nPeJ5rrI5Uuh+5w7hRfPyJKlvQdhVZBhUg==}
+  postcss-styled-syntax@0.7.0:
+    resolution: {integrity: sha512-OeStzPkHJ1/WDGRKm/JuVK8UdJbjt3U7AFC+zUc9omJ79SaXSxWoy+PXxJz7t8vOO8HcUgCLndNEQfLvZ74TuQ==}
+    engines: {node: '>=14.17'}
     peerDependencies:
       postcss: ^8.4.21
 
@@ -3095,6 +3093,11 @@ packages:
 
   typescript@5.1.6:
     resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+  typescript@5.6.3:
+    resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -4849,8 +4852,6 @@ snapshots:
 
   estraverse@5.3.0: {}
 
-  estree-walker@2.0.2: {}
-
   esutils@2.0.3: {}
 
   execa@5.1.1:
@@ -6189,14 +6190,10 @@ snapshots:
     dependencies:
       postcss: 8.4.31
 
-  postcss-styled-syntax@0.4.0(postcss@8.4.31)(typescript@5.1.6):
+  postcss-styled-syntax@0.7.0(postcss@8.4.31):
     dependencies:
-      '@typescript-eslint/typescript-estree': 5.62.0(typescript@5.1.6)
-      estree-walker: 2.0.2
       postcss: 8.4.31
-    transitivePeerDependencies:
-      - supports-color
-      - typescript
+      typescript: 5.6.3
 
   postcss-value-parser@4.2.0: {}
 
@@ -6828,6 +6825,8 @@ snapshots:
       is-typed-array: 1.1.12
 
   typescript@5.1.6: {}
+
+  typescript@5.6.3: {}
 
   uglify-js@3.17.4:
     optional: true
